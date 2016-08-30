@@ -86,10 +86,7 @@ padding: 15px 0 15px 30px;
 margin-bottom: 15px;
 outline: none;
 }
-	.field:focus {
-	border: 1px solid #ffffff;
-	padding: 14px;
-	}
+
 @media only screen and (max-width: 480px)  {
 	.information{
 	width: 100%;
@@ -141,13 +138,17 @@ a:hover {
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #92c656;
+    opacity: 0.3;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    #92c656;
+   opacity: 0.3;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:    #92c656;
+   opacity: 0.3;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #92c656;
+   opacity: 0.3;
 
