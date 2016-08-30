@@ -135,22 +135,29 @@ a:hover {
   color: #7EB6FF;
 }
 
-
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+::-webkit-input-placeholder {
     color:    #92c656;
-    opacity: 0.3;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+:-moz-placeholder {
    color:    #92c656;
-   opacity: 0.3;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
+::-moz-placeholder {
    color:    #92c656;
-   opacity: 0.3;
 }
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
    color:    #92c656;
-   opacity: 0.3;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0.2;
+}
+input:focus:-moz-placeholder {
+    opacity: 0.2;
+}
+input:focus::-moz-placeholder {
+    opacity: 0.2;
+}
+input:focus:-ms-input-placeholder {
+    opacity: 0.2;
 }
 
 .dark .field {
@@ -162,15 +169,15 @@ a:hover {
    color: #222c37;
 }
 
-.dark ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+.dark ::-webkit-input-placeholder {
     color:    #ffffff;
 }
-.dark :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+.dark :-moz-placeholder {
    color:    #ffffff;
 }
-.dark ::-moz-placeholder { /* Mozilla Firefox 19+ */
+.dark ::-moz-placeholder {
    color:    #ffffff;
 }
-.dark :-ms-input-placeholder { /* Internet Explorer 10-11 */
+.dark :-ms-input-placeholder {
    color:    #ffffff;
 }
