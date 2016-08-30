@@ -14,19 +14,16 @@ width: 100%;
 
 #wrapper{
 max-width: 100%;
-width: 940px;
 margin: 0 auto;
 }
 
 .main{
 max-width: 100%;
-width: 940px;
-float: left;
+width: 100%;
 }
 
 .content, .bottom, .sep2{
 width: 100%;
-float: left;
 }
 
 h1{
@@ -56,7 +53,6 @@ h2 strong{
 }
 
 .information{
-width: 480px;
 margin: 0 auto;
 }
 
@@ -78,15 +74,16 @@ width: 478px;
 }
 
 .field{
-background: #333;
-width: 448px;
+background: #fff;
+width: 95%;
+height: 35px;
 -webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
 border: none;
 font-style: italic;
 font-family: 'Lato', sans-serif;
-font-size: 16px;
-color: #ffffff;
-padding: 15px;
+font-size: 1.5em;
+color: #8cc34b;
+padding: 15px 0 15px 30px;
 margin-bottom: 15px;
 outline: none;
 }
@@ -111,21 +108,19 @@ outline: none;
 
 .submit{
 position: absolute;
-right: 15px;
+right: 22px;
 top: 13px;
 padding: 3px 10px;
 -webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
 background: #8bc34a;
+color: #ffffff;
 border: none;
 font-family: 'Lato', sans-serif;
-font-size: 14px;
+font-size: 1.5em;
 font-weight: bold;
 cursor: pointer;
-}
-
-
-.submit:hover{
-background: #eeeeee;
+width: 125px;
+height: 40px;
 }
 
 .error {
@@ -143,3 +138,17 @@ a:visited,
 a:hover {
   color: #7EB6FF;
 }
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #92c656;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #92c656;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #92c656;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #92c656;
+
