@@ -9,5 +9,4 @@ html
   body
     #wrapper
       .main
-        .header
-          h2(class="#{isFailed?'error':''}") !{message}
+        .result(class="#{isFailed?'error':''}") !{message}
