@@ -13,6 +13,7 @@ html
           .information
             form(method="POST", action="/invite")#join-form.form
               input(type="email", name="email", placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
+              input(type="hidden", name="theme", value=theme)
               if tokenRequired
                 input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
               input(type="submit", value="Join").submit
