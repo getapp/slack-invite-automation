@@ -28,6 +28,7 @@ router.post('/invite', function(req, res) {
         body = JSON.parse(body);
         if (body.ok) {
           res.render('result', {
+            theme: req.body.theme,
             community: config.community,
             message: 'Success! Check "'+ req.body.email +'" for an invite from Slack.'
           });
@@ -35,6 +36,7 @@ router.post('/invite', function(req, res) {
           var error = body.error;
           if (error === 'already_invited' || error === 'already_in_team') {
             res.render('result', {
+              theme: req.body.theme,
               community: config.community,
               message: 'Success! You were already invited.<br>' +
                        'Visit <a href="https://'+ config.slackUrl +'" target="_blank">'+ config.community +'</a>'
@@ -47,6 +49,7 @@ router.post('/invite', function(req, res) {
           }
 
           res.render('result', {
+            theme: req.body.theme,
             community: config.community,
             message: 'Failed! ' + error,
             isFailed: true
@@ -70,6 +73,7 @@ router.post('/invite', function(req, res) {
     }
 
     res.render('result', {
+      theme: req.body.theme,
       community: config.community,
       message: 'Failed! ' + errMsg.join(' and ') + '.',
       isFailed: true
