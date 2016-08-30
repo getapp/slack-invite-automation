@@ -107,7 +107,9 @@ position: absolute;
 right: 22px;
 top: 13px;
 padding: 3px 10px;
--webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
 background: #8bc34a;
 color: #ffffff;
 border: none;
@@ -133,6 +135,16 @@ a {
 a:visited,
 a:hover {
   color: #7EB6FF;
+}
+
+.result {
+  background: #fff;
+  height: 40px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  line-height: 40px;
+  border: none;
 }
 
 ::-webkit-input-placeholder {
