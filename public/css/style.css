@@ -145,6 +145,7 @@ a:hover {
   border-radius: 30px;
   line-height: 40px;
   border: none;
+  text-align: center;
 }
 
 ::-webkit-input-placeholder {
