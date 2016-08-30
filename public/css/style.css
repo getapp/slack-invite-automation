@@ -7,8 +7,6 @@ html,body{
 margin:0;
 padding:0;
 font-family: 'Open Sans', sans-serif;
-background: #fff url(../images/bg.jpg) center top no-repeat;
-background-size: cover;
 height: 100%;
 width: 100%;
 }
@@ -26,18 +24,10 @@ width: 940px;
 float: left;
 }
 
-.header, .content, .bottom, .sep2{
+.content, .bottom, .sep2{
 width: 100%;
 float: left;
 }
-
-
-
-.header{
-	margin-top: 160px;
-	margin-bottom: 40px;
-}
-
 
 h1{
 font-family: 'Open Sans', sans-serif;
@@ -93,7 +83,7 @@ margin-top: 20px;
 }
 
 .field{
-background: url(../images/field.png) repeat;
+background: #333;
 width: 448px;
 -webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
 border: none;
@@ -130,7 +120,7 @@ right: 15px;
 top: 13px;
 padding: 3px 10px;
 -webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
-background: #ffffff;
+background: #8bc34a;
 border: none;
 font-family: 'Lato', sans-serif;
 font-size: 14px;
