@@ -5,7 +5,7 @@ var config = require('../config');
 
 router.get('/', function(req, res) {
   res.setLocale(config.locale);
-  res.render('index', { theme: req.query.dark ? 'dark' : 'light',
+  res.render('index', { theme: ('dark' in req.query) ? 'dark' : 'light',
                         community: config.community,
                         tokenRequired: !!config.inviteToken });
 });
