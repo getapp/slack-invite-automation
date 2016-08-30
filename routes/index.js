@@ -38,7 +38,7 @@ router.post('/invite', function(req, res) {
             res.render('result', {
               theme: req.body.theme,
               community: config.community,
-              message: 'Success! You were already invited.<br>' +
+              message: 'Success! You were already invited. ' +
                        'Visit <a href="https://'+ config.slackUrl +'" target="_blank">'+ config.community +'</a>'
             });
             return;
