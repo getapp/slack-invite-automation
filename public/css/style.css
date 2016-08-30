@@ -181,6 +181,11 @@ input:focus:-ms-input-placeholder {
    color: #222c37;
 }
 
+.dark .result {
+  background: #222c37;
+  color: #ffffff;
+}
+
 .dark ::-webkit-input-placeholder {
     color:    #ffffff;
 }
