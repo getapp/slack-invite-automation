@@ -151,4 +151,26 @@ a:hover {
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #92c656;
    opacity: 0.3;
+}
 
+.dark .field {
+   background: #222c37;
+   color: #ffffff;
+}
+
+.dark .submit {
+   color: #222c37;
+}
+
+.dark ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #ffffff;
+}
+.dark :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #ffffff;
+}
+.dark ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #ffffff;
+}
+.dark :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #ffffff;
+}
